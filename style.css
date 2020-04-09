@@ -1,23 +1,58 @@
-body {
-  margin: 0;
-  padding:0;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* montserrat-regular - latin_cyrillic */
+/* montserrat-regular - cyrillic_cyrillic-ext_latin */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v14-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v14-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+       url('../fonts/montserrat-v14-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_cyrillic-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  background: #E5E5E5;
+}
+
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  height: 70px;
+}
+
+.link{
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+.header__logo {
+  margin-left: 140px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 105.69px;
+  height: 40px;
+  display: flex;
+}
+.logo {
+}
+.header__menu {
+  margin-left: 543px;
+  display: flex;
+}
+.header__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.header__button {
+ }
+
+.hf__header {
+  margin-top: 150px;
+}
+/*
 .main-menu{
   list-style: none;
   margin: 0;
@@ -31,12 +66,12 @@ body {
 
 .main-menu a {
   display: block;
+  font-family: "Montserrat";
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
   color: rgba(31, 32, 65, 0.5);
   padding-right: 20px;
-  font-family: 'Montserrat';
 }
 
 .main-menu .sub-menu {
@@ -59,3 +94,4 @@ body {
   padding-right: 280px;
   display: inline-block;
 }
+*/
