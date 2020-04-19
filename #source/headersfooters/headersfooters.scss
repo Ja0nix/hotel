@@ -1,6 +1,8 @@
-.hf {
-	&__header {
+.hf__header {
 		margin-top: 150px;
 	}
-}
-@import 'header/header.scss'
+	.hf__header_logged {
+		margin-top: 40px;
+	}
+@import "header/header.scss";
+@import "header/header.scss"
