@@ -1,0 +1,70 @@
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  Flex-wrap: wrap;
+}
+.header__logo {
+  margin-left: 139px;
+  margin-top: 15px;
+}
+.link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+.link_active {
+  font-weight: bold;
+}
+.header__menu {
+  position: relative;
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 295px;
+}
+.header__menu > li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.header__menu_sub {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.header__menu:hover .header__menu_sub {
+  display: block;
+}
+
+.header__login {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.header__login button {
+  margin-right: 15px;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 34px;
+}
+.header__button1 {
+  color: #BC9CFF;
+  width: 79px;
+  background-color: white;
+  /*решение для градиента на границе кнопки: https://codepen.io/miraviolet/pen/ZobWEg*/
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF, #8BA4F9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;}
+.header__button2 {
+  color: white;
+  width: 101px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
