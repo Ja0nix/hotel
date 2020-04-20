@@ -119,6 +119,9 @@ body {
   padding: 12px 16px;
   z-index: 1; }
 
+.header__menu_sub > li {
+  padding-top: 15px; }
+
 .header__menu:hover .header__menu_sub {
   display: block; }
 
@@ -180,17 +183,17 @@ body {
 .link_active {
   font-weight: bold; }
 
-.header__menu {
+.header__menu_logged {
   position: relative;
   display: inline-block;
   margin-top: 28px;
-  margin-left: 295px; }
+  margin-left: 350px; }
 
-.header__menu > li {
+.header__menu_logged > li {
   display: inline-block;
   margin-right: 25px; }
 
-.header__menu_sub {
+.header__menu_sub_logged {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -200,41 +203,24 @@ body {
   padding: 12px 16px;
   z-index: 1; }
 
-.header__menu:hover .header__menu_sub {
+.header__menu_sub_logged > li {
+  padding-top: 15px; }
+
+.header__menu_logged:hover .header__menu_sub_logged {
   display: block; }
 
-.header__login {
+.header__login_logged {
   margin-top: 20px;
   margin-left: 5px; }
 
-.header__login button {
-  margin-right: 15px;
-  border-radius: 22px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  height: 34px; }
+.header__login_logged::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  /* Dark 10% */
+  background: rgba(31, 32, 65, 0.1); }
 
-.header__button1 {
-  color: #BC9CFF;
-  width: 79px;
-  background-color: white;
-  /*решение для градиента на границе кнопки: https://codepen.io/miraviolet/pen/ZobWEg*/
-  border: solid 2px transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), -webkit-linear-gradient(top, #BC9CFF, #8BA4F9);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), -o-linear-gradient(top, #BC9CFF, #8BA4F9);
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF, #8BA4F9);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  -webkit-box-shadow: 2px 1000px 1px #fff inset;
-  box-shadow: 2px 1000px 1px #fff inset; }
-
-.header__button2 {
-  color: white;
-  width: 101px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background: -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
-  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+.header__login_logged .username {
+  padding-left: 30px;
+  padding-top: 10px; }
