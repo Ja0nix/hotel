@@ -4,5 +4,9 @@
 	.hf__header_logged {
 		margin-top: 40px;
 	}
+	.hf__footer {
+		margin-top: 40px;
+	}
 @import "header/header.scss";
-@import "header/header_logged.scss"
+@import "header/header_logged.scss";
+@import "footer/footer.scss";

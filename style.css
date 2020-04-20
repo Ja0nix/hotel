@@ -77,6 +77,9 @@ body {
 .hf__header_logged {
   margin-top: 40px; }
 
+.hf__footer {
+  margin-top: 40px; }
+
 .header {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
