@@ -53,4 +53,6 @@ body {
   background: #E5E5E5;
 }
 
-@import '#source/headersfooters/headersfooters.scss'
+@import '#source/headersfooters/headersfooters.scss';
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
