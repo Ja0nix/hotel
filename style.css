@@ -242,11 +242,10 @@ body {
     -webkit-box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     min-height: 372px;
-    padding-bottom: 100px; }
+    padding: 0px 10% 100px 10%; }
   .footer__logo {
-    width: 400px;
-    padding-top: 100px;
-    padding-left: 140px; }
+    width: 260px;
+    padding-top: 100px; }
   .footer__logo__text {
     padding-top: 20px;
     font-family: Montserrat;
@@ -356,8 +355,16 @@ body {
     min-height: 70px;
     -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    padding: 28px 140px;
+    padding: 28px 140px 0px 140px;
     /* делает ограничение на растягивания контента */ }
+  .footer__copyright {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* Dark 75% */
+    color: rgba(31, 32, 65, 0.75); }
 
 .navigation__colomn {
   margin-right: 120px; }
@@ -377,9 +384,7 @@ body {
 i {
   width: 44px;
   height: 44px;
-  left: 1256px;
-  top: 578px;
-  font-family: Material Icons;
+  font-family: Font Awesome 5 Brands;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -393,8 +398,34 @@ i {
   text-align: center;
   /* Primary Gradient */
   color: #BC9CFF;
-  /*линейный не отображается*/
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  /*линейный не отображается
+   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/ }
+
+.footer__creative {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  height: 367px;
+  text-align: center; }
+
+.footer__creative__logo {
+  padding-top: 100px; }
+
+.footer__creative__logo__text {
+  margin: 20px calc(30%);
+  /*margin-left: 440px;
+		max-width: 560px; */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75); }
+
+.footer__creative__smicons {
+  padding-top: 5px; }
 
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
@@ -4941,3 +4972,19 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+/*!
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400; }
