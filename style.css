@@ -4988,3 +4988,53 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
+
+/* Colors */
+body {
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0; }
+
+.toplogo {
+  margin-top: 30px;
+  margin-left: 30px; }
+
+.colorstype {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 67px;
+  margin-left: 150px; }
+
+.colors__item {
+  margin-bottom: 20px; }
+
+.colors__item_square {
+  width: 70px;
+  height: 70px;
+  /* Dark 100% */
+  border-radius: 6px; }
+
+.colors__item_square_1 {
+  background: #1F2041; }
+
+.colors__item_square_2 {
+  background: rgba(31, 32, 65, 0.75); }
+
+.colors__item_square_3 {
+  background: rgba(31, 32, 65, 0.5); }
+
+.colors__item_square_4 {
+  background: rgba(31, 32, 65, 0.25); }
+
+.colors__item_square_5 {
+  background: rgba(31, 32, 65, 0.05); }
+
+.colors__item_square_6 {
+  background: #BC9CFF; }
+
+.colors__item_square_7 {
+  background: #6FCF97; }
