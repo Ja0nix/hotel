@@ -4990,6 +4990,26 @@ readers do not read off random characters that represent icons */
   font-weight: 400; }
 
 /* Colors */
+/* quicksand-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quicksand-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/quicksand-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand-v20-latin-regular.woff2") format("woff2"), url("../fonts/quicksand-v20-latin-regular.woff") format("woff"), url("../fonts/quicksand-v20-latin-regular.ttf") format("truetype"), url("../fonts/quicksand-v20-latin-regular.svg#Quicksand") format("svg");
+  /* Legacy iOS */ }
+
+/* quicksand-700 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/quicksand-v20-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/quicksand-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand-v20-latin-700.woff2") format("woff2"), url("../fonts/quicksand-v20-latin-700.woff") format("woff"), url("../fonts/quicksand-v20-latin-700.ttf") format("truetype"), url("../fonts/quicksand-v20-latin-700.svg#Quicksand") format("svg");
+  /* Legacy iOS */ }
+
 body {
   background: #FFFFFF;
   margin: 0;
@@ -5010,7 +5030,13 @@ body {
   margin-left: 150px; }
 
 .colors__item {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .colors__item_square {
   width: 70px;
@@ -5038,3 +5064,22 @@ body {
 
 .colors__item_square_7 {
   background: #6FCF97; }
+
+.colors__item__description {
+  margin-left: 40px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+  color: #1F2041; }
+
+.colors__item__description p {
+  font-weight: normal; }
+
+.fonts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .fonts__item__example {
+    margin-left: 30px; }

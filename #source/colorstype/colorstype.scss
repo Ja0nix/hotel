@@ -1,3 +1,30 @@
+/* quicksand-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v20-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/quicksand-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v20-latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
 body {
 	background: #FFFFFF;
 	margin: 0;
@@ -16,6 +43,8 @@ body {
 .colors {
 	&__item {
 		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
 	}
 	&__item_square {
 		width: 70px;
@@ -45,5 +74,39 @@ body {
 		background: $green;
 	}
 	&__item__description {
+		margin-left: 40px;
+		font-family: Quicksand;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 29px;
+		color: $dark100;
+	}
+	&__item__description p {
+		font-weight: normal;
+	}
+}
+.fonts {
+	display: flex;
+	&__item__tag {
+	}
+	&__item__tag_h1 {
+	}
+	&__item__tag_h2 {
+	}
+	&__item__tag_h3 {
+	}
+	&__item__tag_body {
+	}
+	&__item__example {
+		margin-left: 30px;
+	}
+	&__item__example_h1 {
+	}
+	&__item__example_h2 {
+	}
+	&__item__example_h3 {
+	}
+	&__item__example_body {
 	}
 }
