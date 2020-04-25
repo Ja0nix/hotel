@@ -1,0 +1,20 @@
+input[name="text_field"] {
+	width: 320px;
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-top: 5px;
+	@include body;
+	color: $dark25;
+	padding-left: 15px;
+}
+label {
+	@include H3;
+}
+input[name="text_field"]:focus,
+input[name="text_field"]:focus {
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	color: $dark75;
+}
