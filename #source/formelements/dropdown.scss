@@ -1,4 +1,4 @@
-input[type="text"] {
+.dropdown {
 	width: 320px;
 	height: 44px;
 	background: #FFFFFF;
@@ -6,15 +6,16 @@ input[type="text"] {
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin-top: 5px;
+}
+option,
+select {
 	@include body;
-	color: $dark25;
-	padding-left: 15px;
+	color: $dark75;
+	padding-left: 10px;
+	padding-top: 10px;
 }
-label {
-	@include H3;
-}
-input[type="text"]:focus,
-input[type="text"]:hover {
+.dropdown:focus,
+.dropdown:hover {
 	border: 1px solid rgba(31, 32, 65, 0.5);
 	color: $dark75;
 }

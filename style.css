@@ -5148,10 +5148,10 @@ body {
 .formelements {
   margin: 65px 141px 132px 141px; }
 
-.text_field_default {
+.field {
   margin-bottom: 20px; }
 
-input[name="text_field"] {
+input[type="text"] {
   width: 320px;
   height: 44px;
   background: #FFFFFF;
@@ -5176,8 +5176,8 @@ label {
   line-height: 15px;
   text-transform: uppercase; }
 
-input[name="text_field"]:focus,
-input[name="text_field"]:focus {
+input[type="text"]:focus,
+input[type="text"]:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75); }
 
@@ -5197,3 +5197,29 @@ input[name="hover"] {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding-left: 15px; }
+
+.dropdown {
+  width: 320px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px; }
+
+option,
+select {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 10px;
+  padding-top: 10px; }
+
+.dropdown:focus,
+.dropdown:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75); }
