@@ -5252,7 +5252,7 @@ select {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 10px; }
 
 .dropdown:focus,
@@ -5260,28 +5260,22 @@ select {
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75); }
 
-.select:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent; }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 320px;
+  background: none; }
 
-.material-icons {
+.dropdown .material-icons {
   font-family: Material Icons;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  pointer-events: none;
+  /*"невидима" для мыши, т.е. при клике по ней срабатывает клик по селекту и раскрывается список опшен*/ }
