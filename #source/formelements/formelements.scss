@@ -4,8 +4,18 @@
 .field {
 	margin-bottom: 20px;
 }
+.field_block {
+	display: inline-flex;
+}
+.field_block1 {
+	margin-right: 20px;
+}
+.field2 {
+	margin-bottom: 40px;
+}
 @import 'text_field_default.scss';
 @import 'text_field_hover.scss';
 @import 'dropdown.scss';
 @import 'date_dropdown.scss';
 @import 'date_dropdown_selected.scss';
+@import 'filter_date_dropdown.scss';
