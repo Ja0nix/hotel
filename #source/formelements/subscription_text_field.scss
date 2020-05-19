@@ -1,0 +1,35 @@
+.subscription_text_field {
+	position: relative;
+}
+.subscription_text_field input[type="text"] {
+	width: 170px;
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-top: 5px;
+	@include body;
+	color: $dark25;
+	padding-left: 15px;
+}
+.subscription_text_field label {
+	@include H3;
+}
+.subscription_text_field input[type="text"]:focus,
+.subscription_text_field input[type="text"]:hover {
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	color: $dark75;
+}
+.subscription_text_field .material-icons {
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	position: absolute;
+	top: 30px;
+	left: 130px;
+	pointer-events: none; /*"невидима" для мыши, т.е. при клике по ней срабатывает клик по селекту и раскрывается список опшен*/
+}
