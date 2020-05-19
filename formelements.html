@@ -3,7 +3,7 @@
 <head>
 	 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Colors Type</title>
+  <title>Form Elements</title>
   <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
@@ -28,7 +28,7 @@
 			<div class="field">
 				
 				
-					<label>dropdown</label><br>
+				<label>dropdown</label><br>
 <div class="dropdown">
   <select name="dropdown">
     <option value="0">Сколько гостей</option>
@@ -54,6 +54,25 @@
 	<input type="text" name="Masked text field" value="ДД.ММ.ГГГГ">
 	</label>
 			</div>
+			<div class="field">
+				
+				<!-- https://jqueryui.com/datepicker/-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+<label>date Dropdown</label><br>
+<div class="date_dropdown">
+<input type="text" id="datepicker">
+<i class="material-icons">keyboard_arrow_down</i>
+</div>
+			</div>
+
 		</div>
 </body>
 </html>
