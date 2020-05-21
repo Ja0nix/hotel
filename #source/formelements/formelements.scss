@@ -1,6 +1,10 @@
 .formelements {
 	margin: 65px 141px 132px 141px;
 }
+.top {
+	display: flex;
+	justify-content: space-between;
+}
 .field {
 	margin-bottom: 20px;
 }
@@ -20,3 +24,4 @@
 @import 'date_dropdown_selected.scss';
 @import 'filter_date_dropdown.scss';
 @import 'subscription_text_field.scss';
+@import 'checkbox_buttons.scss';
