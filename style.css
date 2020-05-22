@@ -5686,3 +5686,94 @@ select {
   background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 10px; }
+
+.toggle_buttons label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.toggle_buttons form label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  color: rgba(31, 32, 65, 0.5); }
+
+.toggle_buttons form {
+  width: 270px;
+  margin-top: 13px; }
+
+.toggle_div1 {
+  margin-bottom: 10px; }
+
+.toggle_buttons form input {
+  margin-right: 10px; }
+
+.toggle-button {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  margin: 0;
+  vertical-align: top;
+  background: #ffffff;
+  border: 1px solid #bbc1e1;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2); }
+
+.toggle-button::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  /* Dark 25% */
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2); }
+
+.toggle-button:checked::after {
+  -webkit-transform: translateX(calc(100% + 9px));
+  -ms-transform: translateX(calc(100% + 9px));
+  transform: translateX(calc(100% + 9px));
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.toggle-button:checked {
+  border: 1px solid #BC9CFF; }
+
+.like_button h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.like_container {
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px; }

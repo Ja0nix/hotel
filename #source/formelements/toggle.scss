@@ -1,0 +1,66 @@
+.toggle_buttons label {
+	@include H3;
+}
+.toggle_buttons form label {
+	@include body;
+	text-transform: none;
+	color: $dark50;
+}
+.toggle_buttons form {
+	width: 270px;
+	margin-top: 13px;
+}
+.toggle_div1 {
+  margin-bottom: 10px;
+}
+.toggle_buttons form input{
+  margin-right: 10px;
+}
+.toggle-button {
+  position: relative;
+  
+  width: 40px;
+  height: 20px;
+  margin: 0;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 1px solid #bbc1e1;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button::after {
+  content: "";
+  
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  
+  width: 12px;
+  height: 12px;
+  /* Dark 25% */
+
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  
+  transform: translateX(0);
+  
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button:checked::after {
+  transform: translateX(calc(100% + 9px));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.toggle-button:checked {
+  border: 1px solid #BC9CFF;
+}
